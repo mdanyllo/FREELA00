@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./text.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário</title>
+</head>
+<body>
+    <p class="h1_feliz">Feliz aniversário, Bia!</p>
+    <section class="s_img">
+        <div class="div1"><img src="./img/IMG_4888.PNG" alt="">
+        </div>
+        <div class="div2">
+            <img src="./img/IMG_4891.PNG" alt="">
+        </div>
+    </section>
+    <section class="audio">
+    <p class="p_audio">Antes de ler, dá um play na música :)</p>
+    <audio controls src="./img/videoplayback.m4a"></audio>
+    </section>
+    <div class="container">
+        <h1>Oii Bia, Feliz Aniversário 🎉</h1>
+        <p>Fico muito feliz de estar presente em mais um aniversário seu, sou muito grato por ter você em minha vida e espero continuar fazendo parte da sua vida. Saber que agora o nosso “tchau até amanhã” virou um “vamos marcar de se ver” me deixa triste, porém, com toda certeza, posso afirmar que esses três anos que estudamos juntos foram os meus melhores anos no colégio.</p>
+        
+        <p>Com certeza, se você não tivesse caído de paraquedas na minha vida, eu não estaria aqui hoje, e sou MUITO grato a você. Talvez você não saiba, mas o meu primeiro ano na escola foi o pior ano da minha vida em todos os aspectos. Só melhorou no meu segundo ano, quando conheci meu grupinho que tanto amo e que se tornaram as pessoas mais importantes para mim.</p>
+        
+        <p>O que vou sentir falta do tempo que passávamos na escola eu não consigo colocar em palavras, frases, nem mesmo em um livro inteiro. Mas espero que, mesmo com essa “distância”, a gente continue bem próximos como sempre. Você é uma das pessoas mais importantes para mim, e eu espero que você saiba que eu te amo muito!!</p>
+        
+        <p>Você é uma pessoa incrível! Lembrar que, quando eu te vi pela primeira vez usando brinco de anime, lendo mangá e andando com um esquisitão, eu nunca imaginaria que essa pessoa se tornaria tão próxima, alguém em quem eu confio tanto e com quem me sinto confortável para me abrir.</p>
+        
+        <p>Não me arrependo de nada do que fizemos juntos, você fez e faz parte da melhor fase da minha vida. Espero continuar construindo memórias com você!!</p>
+        
+        <p>Eu te amo, Bia! E quero que você saiba que, por muito tempo, você foi um pilar emocional, de conforto e de afeto para mim. Prova disso é a música <strong>Notion</strong> que você me recomendou quando eu estava bem mal e que hoje é uma música de conforto para mim. Acho que nunca vou conseguir retribuir o que você fez por mim sem nem saber, mas farei o meu máximo para ser o melhor amigo que você terá na sua vida!</p>
+        
+        <p>Tem uma música que eu queria te dedicar antes de concluir essa cartinha. É uma música linda que expressa bem o que eu sinto e, sempre que escuto, várias partes me fazem lembrar de você!</p>
+        
+        <p><em>“Tem pessoas que a gente não esquece nem de se esquecer”</em></p>
+        <p><em>“Personagens do meu livro de memórias”</em></p>
+        <p><em>“De você não esqueço jamais”</em></p>
+        
+        <p>Enfim, escute que você vai me entender. A música se chama <strong>“Minha Vida”</strong>, da Rita Lee.</p>
+        
+        <p>Conte comigo para tudo que você precisar. Continue sendo essa pessoa incrível que você é, aproveite seu dia. <strong>Feliz Aniversário!</strong></p>
+        
+        <p class="assinatura">Ass: Vitu</p>
+    </div>
+    <section class="s_img">
+    <div class="div1"><img src="./img/IMG_4889.PNG" alt=""></div>
+    <div class="div2"><img src="./img/IMG_4890.PNG" alt=""></div>
+    </section>
+    <script>
+function createBalloon() {
+    const balloon = document.createElement("div");
+    balloon.classList.add("balloon");
+    balloon.style.backgroundColor = getRandomColor();
+    balloon.style.left = Math.random() * 100 + "vw";
+    balloon.style.animationDuration = (Math.random() * 3 + 3) + "s";
+    
+    const string = document.createElement("div");
+    string.classList.add("string");
+    balloon.appendChild(string);
+    
+    document.body.appendChild(balloon);
+    
+    setTimeout(() => {
+        balloon.remove();
+    }, 5000);
+}
+
+function getRandomColor() {
+    const colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink"];
+    return colors[Math.floor(Math.random() * colors.length)];
+}
+
+setInterval(createBalloon, 500);
+    </script>
+</body>
+</html>
